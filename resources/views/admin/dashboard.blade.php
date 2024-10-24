@@ -25,7 +25,7 @@
                 position: 'back'
             },
             title: {
-                text: 'GRAFIK TAMU DINAS KOMINFO'
+                text: 'GRAFIK TAMU '
             },
             xAxis: {
                 categories: variableX

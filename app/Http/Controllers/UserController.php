@@ -39,7 +39,7 @@ class UserController extends Controller
             ]);
             // dd($data);
             $data->save();
-            return redirect('/users')->with('success', 'Akun baru telah ditambahkan');
+            return redirect('/users')->with('success', 'data berhasil di simpan');
         } catch (\Exception $e) {
             return redirect('/users')->with('errors', 'Akun baru gagal di tambahkan' . $e);
         }

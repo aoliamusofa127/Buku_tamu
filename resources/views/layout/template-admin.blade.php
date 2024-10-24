@@ -39,6 +39,7 @@
         #hidden_div {
             display: none;
         }
+        
 
         div.scrollmenu {
             background-color: #fff;

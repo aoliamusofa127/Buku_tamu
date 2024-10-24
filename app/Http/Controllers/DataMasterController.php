@@ -31,7 +31,7 @@ class DataMasterController extends Controller
                 'link_barcode' => $request->link_barcode,
             ]);
             $data_master->save();
-            return redirect('/dataMaster')->with('success', 'berhasil tersimpan');
+            return redirect('/dataMaster')->with('success', 'data berhasil di tambahkan');
         } catch (\Exception $e) {
             return redirect('/form_dataMaster')->with('errors', 'gagal tersimpan' . $e);
         }
@@ -51,9 +51,9 @@ class DataMasterController extends Controller
                 'link_barcode' => $request->link_barcode,
             );
             DataMaster::where('dataMaster_id', $request->dataMaster_id)->update($data_master);
-            return redirect('/dataMaster')->with('success', 'Data master berhasil update');
+            return redirect('/dataMaster')->with('success', 'data berhasil di edit ');
         } catch (\Exception $e) {
-            return redirect('/dataMaster')->with('errors', 'Data master gagal update' . $e);
+            return redirect('/dataMaster')->with('errors', 'Data  gagal di edit' . $e);
         }
     }
 

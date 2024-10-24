@@ -56,7 +56,7 @@
                                             <td>{{ $val->alamat_atau_instansi }}</td>
                                             <td>{{ $val->email }}</td>
                                             <td>{{ $val->telepon }}</td>
-                                            <td>{{ $val->tempat_pertemuan ?? 'NULL' }}</td>
+                                            <td>{{ $val->tempat_pertemuan }}</td>
                                             <td>{{ $row->nama_pegawai }}</td>
                                             <td>
                                                 {{ date('d-m-Y', strtotime($val->request_tanggal)) }}
@@ -230,7 +230,7 @@
                                     <label for="request_pegawai" class="form-label">Status verifikasi</label>
                                     <select class="form-select" name="status_tamu">
                                         <option selected class="text-secondary">--silahkan di verifikasi--</option>
-                                        <option value="pending">Pending</option>
+                                        <option value="pending" >Pending</option>
                                         <option value="verifikasi">Verifikasi</option>
                                     </select>
                                 </div>

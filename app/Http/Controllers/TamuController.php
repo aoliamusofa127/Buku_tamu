@@ -149,7 +149,7 @@ class TamuController extends Controller
                 'status_tamu' => $request->status_tamu,
             );
             Tamu::where('tamu_id', $request->tamu_id)->update($data_tamu);
-            return redirect('/tamu')->with('success', 'Data tamu berhasil update');
+            return redirect('/tamu')->with('success', 'Data tamu berhasil di verifikasi');
         } catch (\Exception $e) {
             return redirect('/tamu')->with('errors', 'Data tamu gagal update' . $e);
         }

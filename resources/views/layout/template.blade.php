@@ -9,15 +9,6 @@
     <link rel="shortcut icon" href="{{ asset('assets') }}/images/logo/logo.png" type="image/png">
     <link rel="shortcut icon" href="{{ asset('assets') }}/images/logo/logo.png" type="image/png">
     <style>
-        .background {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            background-image: url("{{ asset('assets/images/background/bupati.jpeg')}}");
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
         @font-face {
             font-family: 'Sans serif';
             src: url() src: url("{{ asset('assets') }}/font-roboto/roboto_condesend_font.ttf') format('ttf");
@@ -52,10 +43,27 @@
             border: solid #00b0ff 1px;
             color: #00b0ff;
         }
+
+        body {
+            background-image: url('{{ asset('assets') }}/images/background/bupati.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .content {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            color: white;
+        }
     </style>
 </head>
 
-<body style="background-image: url('{{ asset('assets/images/logo/bupati.jpeg') }}');">
+<body>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
             <a class="navbar-brand text-color-blue" href="/">BUKU TAMU</a>

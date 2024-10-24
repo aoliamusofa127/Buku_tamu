@@ -30,7 +30,7 @@ class PegawaiController extends Controller
                 'jabatan' => $request->jabatan,
             ]);
             $data_pegawai->save();
-            return redirect('/pegawai')->with('success', 'berhasil tersimpan');
+            return redirect('/pegawai')->with('success', 'data berhasil di tambahkan');
         } catch (\Exception $e) {
             return redirect('/form-pegawai')->with('errors', 'gagal tersimpan' . $e);
         }
@@ -50,7 +50,7 @@ class PegawaiController extends Controller
                 'jabatan' => $request->jabatan,
             );
             Pegawai::where('pegawai_id', $request->pegawai_id)->update($data_pegawai);
-            return redirect('/pegawai')->with('success', 'Data pegawai berhasil update');
+            return redirect('/pegawai')->with('success', 'data berhasil di edit');
         } catch (\Exception $e) {
             return redirect('/pegawai')->with('errors', 'Data pegawai gagal update' . $e);
         }

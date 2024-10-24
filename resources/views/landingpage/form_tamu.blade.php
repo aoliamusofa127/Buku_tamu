@@ -57,7 +57,6 @@
                                     placeholder="nomor telepon">
                             </div>
                         </div>
-
                         <div class="mb-3">
                             <label for="request_pegawai" class="form-label">Ingin bertemu dengan</label>
                             <select class="form-select" name="pegawai_id">
@@ -70,8 +69,8 @@
                         </div>
                         <div class="mb-3">
                             <label for="request-tanggal" class="form-label">Tanggal bertemu </label>
-                            <input type="date" name="request_tanggal" class="form-control" id="request-tanggal">
                             <p class="text text-danger">-- ( boleh di kosongkan jika ingin bertamu hari ini ) --</p>
+                            <input type="date" name="request_tanggal" class="form-control" id="request-tanggal">
                         </div>
                         <div class="mb-3">
                             <div class="form-floating mt-3">

@@ -92,7 +92,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah data master</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah data Qr code</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <form action="/add-dataMaster" method="post">
@@ -127,7 +127,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Edit data master</h1>
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Edit data Qr code</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <form action="/update-dataMaster" method="post">
